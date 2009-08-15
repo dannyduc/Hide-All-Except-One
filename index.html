@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="en-us" />
+        
+        <title>"hide all except one" demo (like tabs)</title>
+
+        <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+
+        <!-- import the DOM logic from external javascript files -->
+        <script type="text/javascript" src="../../_js/jquery.min.js"></script>
+        <script type="text/javascript" src="hideAllExcept.js"></script>
+        
+    </head>
+    <body>
+        <div id="content">
+            <h1>Hide All Except One <span class="smaller">(like tabs)</span></h1>
+            <ul id="about">
+                <li>Requires jQuery</li>
+                <li>Bookmarkable</li>
+                <li>Unobtrusive</li>
+                <li>Simple markup</li>
+            </ul><br />
+        
+            <ul id="buttons">
+                <li><a class="toggle" href="#breakfast">breakfast</a></li> <!-- The js looks for any links with a class of 'toggle'. It then makes visible the id which matches the href. -->
+                <li><a class="toggle" href="#lunch">lunch</a></li>
+                <li><a class="toggle" href="#dinner">dinner</a></li>
+            </ul><br />
+
+            <div id="toggleThis"> <!-- the js looks for an id of 'toggleThis' and divs inside of it. -->
+                <div id="breakfast">
+                    <h3>Eggs and Toast</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div id="lunch">
+                    <h3>Tacos</h3>
+                    <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div id="dinner">
+                    <h3>Black Bean Soup</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            
+            <p>You can style the content whichever way you wish, but the behavior matches that of tabs. For more documentation see the javascript file.</p>
+            
+            <h2>Download</h2>
+            <p>- <a class="code" href="hideAllExcept.js">hideAllExcept.js</a></p>
+        </div>
+        <p id="me"><a href="../../">&#x2191; enure</a></p>
+    </body>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-603643-1");
+            pageTracker._trackPageview();
+        } catch(err) {}
+    </script>
+</html>

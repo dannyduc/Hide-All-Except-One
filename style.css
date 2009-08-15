@@ -1,0 +1,28 @@
+.hide { display: none; } /* required */
+
+body { background-color: #F0F0EE; }
+#content { margin: 1.4em; padding: 1em; border: 1px solid #ccc; background-color: #fff; }
+
+body, h1, h3, span, ul, li, a, div, p { font-family: 'news gothic mt', 'lucida grande', 'bitstream vera sans', helvetica, sans-serif; margin: 0; padding: 0; }
+
+h1 { margin: 0 0 .2em 0; }
+h1 span.smaller { font-weight: normal; font-size: 70%; }
+h2, h3 { margin-bottom: -.5em; }
+p { margin-top: 1em; line-height: 1.4; }
+
+ul { padding-left: 0; }
+li { float: left; display: block; margin-right: 1em; }
+ul#about li:before { content: "*"; }
+ul#buttons { margin: 2em 0 .5em .5em; }
+ul#buttons li { padding: .2em .5em; background-color: #eee; border: 1px solid #ccc; border-bottom: 0; }
+
+div#toggleThis { margin: .4em 0 2em; border: 1px solid #ccc; }
+div#toggleThis div { background-color: #eee; padding: 1em; color: #444; font-family: georgia, serif; }
+
+a, a:link, a:visited { color: #111; text-decoration: none; }
+a.code { border-bottom: 1px solid #888; }
+a.active, a:hover { color: red; }
+
+#me { text-align: center; }
+#me a { color: #aaa; }
+#me a:hover { color: red; }
