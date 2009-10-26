@@ -5,7 +5,7 @@ requires jquery (http://jquery.com/)
 ** http://dev.jquery.com/ticket/745 **
 
 Keep this url with the script:
-http://github.com/enure/Hide-All-Except-One/tree/master
+http://github.com/enure/Hide-All-Except-One
 
 OVERVIEW
 This works like tabs, however you may
