@@ -1,26 +1,28 @@
-jQuery(document).ready(function() {
-    jQuery().hideAllExcept.init();
-});
-
-jQuery.fn.hideAllExcept = {
+(function($){
+  $.hideAllExcept = {
     init: function() {
-        var hash = window.location.hash;
+      var hash = window.location.hash;
 
-        (!hash) ?  
-            jQuery().hideAllExcept.hideShow('#' + jQuery('#toggleThis > div:first').attr('id')) 
-                : jQuery().hideAllExcept.hideShow(window.location.hash);
+      (!hash) ? $.hideAllExcept.hideShow('#' + $('#toggleThis > div:first').attr('id')) : $.hideAllExcept.hideShow(window.location.hash);
 
-        jQuery('a.toggle').click(function() {
-            var href = jQuery(this).attr('href');
-            jQuery().hideAllExcept.hideShow(href);
-            return false; // prevents the window from scrolling to the anchor
-        });
-        
+      $('a.toggle').click(function() {
+        var href = $(this).attr('href');
+        $.hideAllExcept.hideShow(href);
+        return false; // prevents the window from scrolling to the anchor
+      });
     },
     hideShow: function(el) {
-        jQuery(el).removeClass('hide').siblings().addClass('hide');
-    
-        jQuery('a.toggle').removeClass('active');
-        jQuery('a[href="' + el + '"]').addClass('active');
+      $(el).removeClass('hide').siblings().addClass('hide');
+
+      $('a.toggle').removeClass('active');
+      $('a[href="' + el + '"]').addClass('active');
     }
-}
+  }
+})(jQuery);
+
+
+
+
+
+
+
