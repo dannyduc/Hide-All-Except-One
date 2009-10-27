@@ -1,14 +1,17 @@
+/* http://github.com/enure/Hide-All-Except-One */
+
 (function($){
   $.hideAllExcept = {
     init: function() {
       var hash = window.location.hash;
+      var hs = $.hideAllExcept.hideShow;
 
-      (!hash) ? $.hideAllExcept.hideShow('#' + $('#toggleThis > div:first').attr('id')) : $.hideAllExcept.hideShow(window.location.hash);
+      (!hash) ? hs('#' + $('#toggleThis > div:first').attr('id')) : hs(window.location.hash);
 
       $('a.toggle').click(function(e) {
         e.preventDefault();
         var href = $(this).attr('href');
-        $.hideAllExcept.hideShow(href);
+        hs(href);
       });
     },
     hideShow: function(el) {
