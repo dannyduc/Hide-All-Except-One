@@ -3,10 +3,9 @@
     <head>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <title>"hide all except one" demo (like tabs)</title>
-        <link href="style.css" rel="stylesheet" type="text/css" media="all" />
-
+        <link href="style.css" rel="stylesheet" type="text/css" />
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-        <script src="jquery.hideAllExcept.js"></script>
+        <script src="jquery.hideAllExceptOne.js"></script>
 	    <script>
 		    jQuery(function($){
                 $.hideAllExcept.init();        
@@ -21,13 +20,13 @@
                 <li>Bookmarkable</li>
                 <li>Unobtrusive</li>
                 <li>Simple markup</li>
-            </ul><br />
+            </ul><br>
         
             <ul id="buttons">
                 <li><a class="toggle" href="#breakfast">breakfast</a></li> <!-- The js looks for any links with a class of 'toggle'. It then makes visible the id which matches the href. -->
                 <li><a class="toggle" href="#lunch">lunch</a></li>
                 <li><a class="toggle" href="#dinner">dinner</a></li>
-            </ul><br />
+            </ul><br>
 
             <div id="toggleThis"> <!-- the js looks for an id of 'toggleThis' and divs inside of it. -->
                 <div id="breakfast">
@@ -47,7 +46,7 @@
             <p>You can style the content whichever way you wish, but the behavior matches that of tabs. For more documentation see the javascript file.</p>
             
             <h2>Download</h2>
-            <p>- <a class="code" href="http://github.com/enure/Hide-All-Except-One/tree/master">hideAllExcept.js</a></p>
+            <p>- <a class="code" href="http://github.com/enure/Hide-All-Except-One">hideAllExcept.js</a></p>
         </div>
         <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

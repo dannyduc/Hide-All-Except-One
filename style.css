@@ -1,7 +1,5 @@
 /* http://github.com/enure/Hide-All-Except-One */
 
-.hide { display: none; } /* required */
-
 body { background-color: #F0F0EE; }
 #content { margin: 1.4em; padding: 1em; border: 1px solid #ccc; background-color: #fff; }
 
@@ -23,7 +21,7 @@ div#toggleThis div { background-color: #eee; padding: 1em; color: #444; font-fam
 
 a, a:link, a:visited { color: #111; text-decoration: none; }
 a.code { border-bottom: 1px solid #888; }
-a.active, a:hover { color: red; }
+a.active, a:hover { color: red; outline: none; }
 
 #me { text-align: center; }
 #me a { color: #aaa; }

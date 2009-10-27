@@ -5,14 +5,14 @@
 
       (!hash) ? $.hideAllExcept.hideShow('#' + $('#toggleThis > div:first').attr('id')) : $.hideAllExcept.hideShow(window.location.hash);
 
-      $('a.toggle').click(function() {
+      $('a.toggle').click(function(e) {
+        e.preventDefault();
         var href = $(this).attr('href');
         $.hideAllExcept.hideShow(href);
-        return false; // prevents the window from scrolling to the anchor
       });
     },
     hideShow: function(el) {
-      $(el).removeClass('hide').siblings().addClass('hide');
+      $(el).show().siblings().hide();
 
       $('a.toggle').removeClass('active');
       $('a[href="' + el + '"]').addClass('active');
