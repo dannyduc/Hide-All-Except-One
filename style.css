@@ -9,10 +9,10 @@ h3{font-weight:bold;}
 #tabs{margin:6em 0 .5em .5em;}
 #tabs li{padding:.1em .4em;}
 #tabs li a{color:#777;}
-#toggleThis{margin:.2em 0 2em 0;border:1px solid #ccc;width:400px;}
-#toggleThis div{background-color:#F7F7F7;padding:1em;color:#444;font-family:georgia,serif;}
-#toggleThis ol,
-#toggleThis ul{margin-left:2em;}
+#boxes{margin:.2em 0 2em 0;border:1px solid #ccc;width:400px;}
+#boxes div{background-color:#F7F7F7;padding:1em;color:#444;font-family:georgia,serif;}
+#boxes ol,
+#boxes ul{margin-left:2em;}
 a,a:link,a:visited{color:#111;text-decoration:none;}
 a.code{border-bottom:1px solid #888;}
 #tabs li a.active,a:hover{color:#34756F;outline:none;border-bottom:0;}

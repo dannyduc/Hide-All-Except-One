@@ -1,24 +1,26 @@
 /* http://github.com/enure/Hide-All-Except-One */
 
 (function($){
-  $.hideAllExcept = function(){
+  $.hideAllExcept = function(tabs,boxes){
     function init() {
-      var hash = window.location.hash;
-
       // make it bookmarkable/refreshable. but, no history.
-      (!hash) ? hideShow('#' + $('#toggleThis > div:first').attr('id')) : hideShow(window.location.hash);
+      var hash = window.location.hash;
+      (!hash) ? hideShow('#' + $(boxes+':first').attr('id')) : hideShow(window.location.hash);
 
       // add click handler.
-      $('a.toggle').click(function(e) {
+      $(tabs).click(function(e) {
         e.preventDefault();
         var href = $(this).attr('href');
+        // add back the hash which is prevented by e.preventDefault()
+        window.location.hash = href;
         hideShow(href);
       });
     }
     function hideShow(el) {
-      $(el).show().siblings().hide();
+      $(boxes).hide();
+      $(el).show();
 
-      $('a.toggle').removeClass('active');
+      $(tabs).removeClass('active');
       $('a[href="' + el + '"]').addClass('active');
     }
     init();

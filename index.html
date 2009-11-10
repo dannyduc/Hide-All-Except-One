@@ -2,35 +2,35 @@
 <html>
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <title>"hide all except one" demo (like tabs)</title>
+    <title>"Hide All Except One" demo (like tabs)</title>
     <link href="http://enure.net/_css/base.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-    <script src="jquery.hideAllExceptOne.js"></script>
+    <script src="jquery.hideAllExceptOne.min.js"></script>
     <script>
       jQuery(function($){
-        $.hideAllExcept();
+        $.hideAllExcept('.tab', '.box');
       });
     </script>
   </head>
   <body>
     <div id="content">
-      <h1>Hide All Except One <span class="smaller">(like tabs)</span></h1>
+      <h1>Hide All Except One</span></h1>
       <ul id="about">
         <li>Requires jQuery</li>
         <li>Bookmarkable</li>
         <li>Unobtrusive</li>
         <li>Simple markup</li>
       </ul><br>
-      <h2>Download <a class="code" href="http://github.com/enure/Hide-All-Except-One">hideAllExcept.js</a></h2>
+      <h2>Download <a class="code" href="http://github.com/enure/Hide-All-Except-One">jquery.hideAllExceptOne.js</a></h2>
       <div id="example">
         <ul id="tabs">
-          <li><a class="toggle" href="#breakfast">breakfast</a></li>
-          <li><a class="toggle" href="#lunch">lunch</a></li>
-          <li><a class="toggle" href="#dinner">dinner</a></li>
+          <li><a class="tab" href="#breakfast">breakfast</a></li>
+          <li><a class="tab" href="#lunch">lunch</a></li>
+          <li><a class="tab" href="#dinner">dinner</a></li>
         </ul><br>
-        <div id="toggleThis">
-          <div id="breakfast">
+        <div id="boxes">
+          <div id="breakfast" class="box">
             <h3>Eggs and Toast</h3>
             <h4>Ingredients</h4>
             <ul>
@@ -44,7 +44,7 @@
               <li>Toast bread. Add butter.</li>
             </ol><br>
           </div>
-          <div id="lunch">
+          <div id="lunch" class="box">
             <h3>
               <a href="http://allrecipes.com/Recipe/Delicious-Beef-Tongue-Tacos/Detail.aspx">
                 Delicious Beef Tongue Tacos
@@ -72,7 +72,7 @@
               <li>Heat the oil in a skillet over medium heat. Cook the tomatoes and peppers in the hot oil until softened on all sides. Remove the tomatoes and peppers in a blender, keeping the oil on the heat; season with salt. Blend briefly until still slightly chunky. Cook the diced onion in the skillet until translucent; stir in the tomato mixture. Cook another 5 to 6 minutes. Build the tacos by placing shredded tongue meat into a tortilla and spooning salsa over the meat.</li>
             </ol><br>
           </div>
-          <div id="dinner">
+          <div id="dinner" class="box">
             <h3>Black Bean Soup</h3>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
