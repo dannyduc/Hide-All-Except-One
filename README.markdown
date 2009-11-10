@@ -14,25 +14,25 @@ work.
 Create links as such and place them 
 anywhere in your markup:
 
-   <a href="#lorem" class="tab">lorem</a>
-   <a href="#ipsum" class="tab">ipsum</a>
+    <a href="#lorem" class="tab">lorem</a>
+    <a href="#ipsum" class="tab">ipsum</a>
 
 Create your 'tab' content:
 
-   <div id="lorem" class="box">
-     lorem
-   </div>
-   <div id="ipsum" class="box">
-     ipsum
-   </div>
+    <div id="lorem" class="box">
+        lorem
+    </div>
+    <div id="ipsum" class="box">
+        ipsum
+    </div>
 
 Then call the javascript as such:
 
-  <script>
-    jQuery(function($){
-      $.hideAllExcept('.tab', '.box');
-    });
-  </script>
+    <script>
+        jQuery(function($){
+            $.hideAllExcept('.tab', '.box');
+        });
+    </script>
 
 ### No Javascript
 
